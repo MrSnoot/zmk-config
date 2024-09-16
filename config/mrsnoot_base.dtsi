@@ -70,4 +70,13 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
+    // Conditional layer only when we have less thumb keys
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+    	tri {
+    	    if-layers = <NUM_L SYM_L>;
+    	    then-layer = <ADJ_L>;
+        };
+    };
 };

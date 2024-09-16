@@ -4,6 +4,16 @@
  * SPDX-License-Identifier: MIT
  */
 
+/*                KEY POSITIONS
+
+    ╭─────────────────────────────────────────╮
+    │  0   1   2   3   4 │  5   6   7   8   9 │
+    │ 10  11  12  13  14 | 15  16  17  18  19 │
+    │ 20  21  22  23  24 | 25  26  27  28  29 │
+    │         30  31  32 | 33  34  35         │
+    ╰─────────────────────────────────────────╯
+*/
+
 #define COMBO_CAPS_WORD 10 19
 #define COMBO_ESC       0 1
 #define COMBO_DOT       12 13
@@ -39,15 +49,6 @@
 #include "mrsnoot_macros.dtsi"
 
 / {
-    // Conditional layer only when we have less thumb keys
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-    	tri {
-    	    if-layers = <NUM_L SYM_L>;
-    	    then-layer = <ADJ_L>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 

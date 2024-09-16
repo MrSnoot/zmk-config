@@ -1,0 +1,124 @@
+ /*
+ * Copyright (c) 2022 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/outputs.h>
+
+/*                KEY POSITIONS
+
+    ╭─────────────────────────────────────────────────╮
+    │  0   1   2   3   4 │  5  6 │  7   8   9  10  11 │
+    │ 12  13  14  15  16 │ 17 18 │ 19  20  21  22  23 │
+    │ 24  25  26  27  28 │ 29 30 │ 31  32  33  34  35 │
+    │ 36  37  38  39 │  40   │   41  │ 42  43  44  45 │
+    ╰─────────────────────────────────────────────────╯
+*/
+
+#define COMBO_CAPS_WORD 12 23
+#define COMBO_ESC       0 1
+#define COMBO_DOT       14 15
+#define COMBO_COMMA     13 14
+#define COMBO_DASH      12 13
+#define COMBO_SQUOT     2 3
+#define COMBO_DQUOT     26 27
+#define COMBO_STAR      14 27
+#define COMBO_HASH      25 26
+#define COMBO_EQUAL     1 2
+#define COMBO_PERCENT   15 26
+#define COMBO_SLASH     14 25
+#define COMBO_BACKSLASH 13 26
+#define COMBO_BSPC      20 21
+#define COMBO_BSPC_WORD 20 21 22
+#define COMBO_DEL       22 23
+#define COMBO_DEL_WORD  21 22 23
+#define COMBO_COPY      8 9
+#define COMBO_PASTE     9 10
+#define COMBO_CUT       10 11
+#define COMBO_COPY_ALL  32 33
+#define COMBO_COPY_LINE 33 34
+#define COMBO_COPY_WORD 34 35
+#define COMBO_ALT_F4    19 31
+#define COMBO_TAB       21 32
+#define COMBO_VDPR      9 20
+#define COMBO_VDNX      8 21
+#define COMBO_MS_DCLICK 20 21
+#define COMBO_NUM_WORD  9 22
+
+#include "mrsnoot_base.dtsi"
+#include "mrsnoot_combos.dtsi"
+#include "mrsnoot_macros.dtsi"
+
+#define TBLE_DUAL_2U 1
+
+/ {
+    chosen {
+       zmk,matrix_transform = &dual_2u_transform;
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            label = "Base";
+            bindings = <
+ &kp Q      &kp Y      &kp O      &kp P      &kp Z      XXXXXXX    XXXXXXX    &kp W      &kp C      &kp M      &kp V      &kp X
+ HRM_O_H    HRM_O_A    HRM_O_E    HRM_O_I    &kp K      XXXXXXX    XXXXXXX    &kp G      HRM_O_T    HRM_O_N    HRM_O_S    HRM_O_R
+ &kp J      &kp SEMI   &kp QUOT   &kp U      &kp LBKT   XXXXXXX    XXXXXXX    &kp B      &kp D      &kp L      &kp F      &bhm LGUI MINUS 
+ XXXXXXX    XXXXXXX    XXXXXXX    OSL_NUM    NAV_SPC                          MS_ENT     OSL_SYM    XXXXXXX    XXXXXXX    XXXXXXX
+            >;
+        };
+
+        nav_layer {
+            label = "Nav";
+            bindings = <
+&bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  _______    XXXXXXX    XXXXXXX    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
+_______    _______    _______    _______    _______                          _______    _______    _______    _______    _______
+            >;
+        };
+
+        mouse_layer {
+            label = "Ms";
+            bindings = <
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_dpi    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    XXXXXXX    XXXXXXX    XXXXXXX
+_______    _______    _______    _______    _______                          _______    _______    _______    _______    _______
+            >;
+        };
+
+        num_func_layer {
+            label = "Num_Func";
+            bindings = <
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    XXXXXXX   XXXXXXX   &kp LS(N7)   &kp N7    &kp N8    &kp N9    &kp SLASH
+NF_F6     NF_F7     NF_F8     NF_F9     &kp F10   XXXXXXX   XXXXXXX   &kp LS(RBKT) NF_4      NF_5      NF_6      NF_PLS
+&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX   XXXXXXX   XXXXXXX   &kp COMMA    &kp N1    &kp N2    &kp N3    &kp DOT
+_______   _______   _______   _______   _______                       &kp N0       _______   _______   _______   _______
+            >;
+        };
+
+        symbol_layer {
+            label = "Symbol";
+            bindings = <
+&kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   XXXXXXX     XXXXXXX     XXXXXXX     &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) XXXXXXX
+&kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   XXXXXXX     XXXXXXX     XXXXXXX     &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
+XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     XXXXXXX     XXXXXXX     &f2_cpln          &im1_ins          XXXXXXX      &kp PSCRN
+_______       _______       _______    _______    _______                              _______     _______           _______           _______      _______
+            >;
+        };
+
+        adjust_layer {
+            label = "Adjust";
+            bindings = <
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
+_______     _______     _______     _______     _______                             _______     _______     _______     _______     _______
+            >;
+        };
+    };
+};
+
