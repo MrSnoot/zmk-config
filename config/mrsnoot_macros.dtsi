@@ -1,0 +1,85 @@
+/ {
+   macros {
+        cp_all: copy_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp LC(A) &kp LC(C)>;
+        };
+        cp_line: copy_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp HOME &kp LS(END) &kp LC(C)>;
+        };
+        cp_word: copy_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp LC(LEFT) &kp LC(LS(RIGHT)) &kp LC(C)>;
+        };
+    	s_ln_f5: select_line_f5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp HOME &kp LS(END) &kp F5>;
+        };
+        f2_cpln: f2_copy_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp F2 &kp HOME &kp LS(END) &kp LC(C) &kp ESC>;
+        };
+        im1_ins: imed_insert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings 
+                = <&kp LC(A) &kp LC(V)>
+                , <&macro_wait_time 500>
+                , <&kp LA(F4)>
+                , <&macro_wait_time 500>
+                , <&kp ENTER>;
+        };
+        dbl_clk: mouse_double_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&mkp MB1 &mkp MB1>;
+        };
+        tb_scr: trackball_toggle_scroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <25>;
+            tap-ms = <10>;
+            bindings 
+                = <&kp SLCK>
+                , <&kp SLCK>;
+        };
+        tb_dpi: trackball_change_dpi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <25>;
+            tap-ms = <10>;
+            bindings 
+                = <&kp KP_NLCK>
+                , <&kp KP_NLCK>;
+        };
+        tb_rst: trackball_reset {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <25>;
+            tap-ms = <10>;
+            bindings 
+                = <&kp CLCK>
+                , <&kp CLCK>;
+        };
+    };
+};
