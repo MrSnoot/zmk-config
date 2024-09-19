@@ -178,6 +178,12 @@
             layers = <OPY_L NUM_L>;
             bindings = <&num_word NUM_L>;
         };
+        combo_soft_off {
+            timeout-ms = <50>;
+            key-positions = <COMBO_SOFT_OFF>;
+            layers = <ADJ_L>;
+            bindings = <&soft_off>;
+        };
         // combos task previous, task next hinzufügen
     };
 };

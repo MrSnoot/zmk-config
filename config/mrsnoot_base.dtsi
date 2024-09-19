@@ -56,6 +56,10 @@
   continue-list = <BSPC DEL DOT COMMA LS(RBKT) RBKT SLASH LS(N0)>;
 };
 
+&soft_off {
+    hold-time-ms = <2000>; // Only turn off it the key is held for 2 seconds or longer.
+};
+
 / {
     behaviors {
         bhm: balanced_homerow_mods {
