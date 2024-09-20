@@ -49,6 +49,10 @@
 #include "mrsnoot_combos.dtsi"
 #include "mrsnoot_macros.dtsi"
 
+&kscan0 {
+    wakeup-source;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";

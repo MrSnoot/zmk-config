@@ -60,10 +60,6 @@
     hold-time-ms = <2000>; // Only turn off it the key is held for 2 seconds or longer.
 };
 
-&kscan0 {
-    wakeup-source;
-};
-
 / {
     behaviors {
         bhm: balanced_homerow_mods {
