@@ -43,9 +43,9 @@
 #define COMBO_TAB       21 32
 #define COMBO_VDPR      9 20
 #define COMBO_VDNX      8 21
-#define COMBO_MS_LAYER  23 41
+#define COMBO_MS_LAYER  21 41
 #define COMBO_MS_DCLICK 20 21
-#define COMBO_NUM_WORD  9 22
+#define COMBO_NUM_WORD  20 33
 #define COMBO_SOFT_OFF  12 23
 
 #include "mrsnoot_base.dtsi"
