@@ -41,9 +41,10 @@
 #define COMBO_TAB       17 26
 #define COMBO_VDPR      7 16
 #define COMBO_VDNX      6 17
+#define COMBO_MS_LAYER  19 33
 #define COMBO_MS_DCLICK 16 17
 #define COMBO_NUM_WORD  7 18
-#define COMBO_SOFT_OFF 10 19
+#define COMBO_SOFT_OFF  10 19
 
 #include "mrsnoot_base.dtsi"
 #include "mrsnoot_combos.dtsi"
@@ -83,7 +84,7 @@
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_dpi    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    XXXXXXX    XXXXXXX    XXXXXXX
-                      _______    _______    _______    _______    _______    _______
+                      _______    _______    _______    &tog MS_L  _______    _______
             >;
         };
 

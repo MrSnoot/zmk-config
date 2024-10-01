@@ -166,6 +166,12 @@
             layers = <OPY_L>;
             bindings = <&kp LG(LC(RIGHT))>;
         };
+        combo_ms_layer {
+            timeout-ms = <50>;
+            key-positions = <COMBO_MS_LAYER>;
+            layers = <OPY_L MS_L>;
+            bindings = <&tog MS_L>;
+        };
         combo_ms_dclick {
             timeout-ms = <50>;
             key-positions = <COMBO_MS_DCLICK>;
