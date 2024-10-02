@@ -109,37 +109,37 @@
         combo_copy {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY>;
-             layers = <OPY_L>;
+             layers = <OPY_L MS_L>;
             bindings = <&kp LC(C)>;
         }; 
         combo_paste {
             timeout-ms = <50>;
             key-positions = <COMBO_PASTE>;
-             layers = <OPY_L>;
+             layers = <OPY_L MS_L>;
             bindings = <&kp LC(V)>;
         };
         combo_cut {
             timeout-ms = <50>;
             key-positions = <COMBO_CUT>;
-             layers = <OPY_L>;
+             layers = <OPY_L MS_L>;
             bindings = <&kp LC(X)>;
         };
         combo_copy_all {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_ALL>;
-            layers = <OPY_L>;
+            layers = <OPY_L MS_L>;
             bindings = <&cp_all>;
         };
         combo_copy_line {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_LINE>;
-            layers = <OPY_L>;
+            layers = <OPY_L MS_L>;
             bindings = <&cp_line>;
         };
         combo_copy_word {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_WORD>;
-            layers = <OPY_L>;
+            layers = <OPY_L MS_L>;
             bindings = <&cp_word>;
         };
         combo_alt_f4 {
