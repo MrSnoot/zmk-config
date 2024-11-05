@@ -81,7 +81,7 @@
         mouse_layer {
             label = "Ms";
             bindings = <
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_dpi    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    XXXXXXX    XXXXXXX    XXXXXXX
                       _______    _______    _______    &tog MS_L  _______    _______
