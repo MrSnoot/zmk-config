@@ -23,7 +23,7 @@
 #define NAV_SPC &lt NAV_L SPACE
 #define MS_ENT  &lt MS_L ENTER
 #define OSL_SYM &sl SYM_L
-#define MICMUTE &kp LG(LS(U))
+#define MICMUTE &kp LC(LS(M))
 
 // Home Row Mods
 #define HRM_O_H &bhm LSHFT H
