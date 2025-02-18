@@ -1,0 +1,121 @@
+/*
+ * Copyright (c) 2024 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/*                KEY POSITIONS
+
+    ╭─────────────────────────────────────────╮
+    │  0   1   2   3   4 │  5   6   7   8   9 │
+    │ 10  11  12  13  14 | 15  16  17  18  19 │
+    │ 20  21  22  23  24 | 25  26  27  28  29 │
+    │             30  31 | 32  33             │
+    ╰─────────────────────────────────────────╯
+*/
+
+#define COMBO_CAPS_WORD 10 19
+#define COMBO_ESC       0 1
+#define COMBO_DOT       12 13
+#define COMBO_COMMA     11 12
+#define COMBO_DASH      10 11
+#define COMBO_SQUOT     2 3
+#define COMBO_DQUOT     22 23
+#define COMBO_STAR      12 23
+#define COMBO_HASH      21 22
+#define COMBO_EQUAL     1 2
+#define COMBO_PERCENT   13 22
+#define COMBO_SLASH     12 21
+#define COMBO_BACKSLASH 11 22
+#define COMBO_BSPC      16 17
+#define COMBO_BSPC_WORD 16 17 18
+#define COMBO_DEL       18 19
+#define COMBO_DEL_WORD  17 18 19
+#define COMBO_COPY      6 7
+#define COMBO_PASTE     7 8
+#define COMBO_CUT       8 9
+#define COMBO_COPY_ALL  26 27
+#define COMBO_COPY_LINE 27 28
+#define COMBO_COPY_WORD 28 29
+#define COMBO_ALT_F4    15 25
+#define COMBO_TAB       17 26
+#define COMBO_VDPR      7 16
+#define COMBO_VDNX      6 17
+#define COMBO_MS_LAYER  18 32
+#define COMBO_MS_DCLICK 16 17
+#define COMBO_NUM_WORD  16 27
+#define COMBO_SOFT_OFF  10 19
+
+#include "mrsnoot_base.dtsi"
+#include "mrsnoot_combos.dtsi"
+#include "mrsnoot_macros.dtsi"
+
+&kscan0 {
+    wakeup-source;
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            label = "Base";
+            bindings = <
+ &kp Q      &kp Y      &kp O      &kp P      &kp Z      &kp W      &kp C      &kp M      &kp V      &kp X
+ HRM_O_H    HRM_O_A    HRM_O_E    HRM_O_I    &kp K      &kp G      HRM_O_T    HRM_O_N    HRM_O_S    HRM_O_R
+ &kp J      &kp SEMI   &kp QUOT   &kp U      &kp LBKT   &kp B      &kp D      &kp L      &kp F      &bhm LGUI MINUS 
+                                  OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM
+            >;
+        };
+
+        nav_layer {
+            label = "Nav";
+            bindings = <
+&bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  _______    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
+                                 _______    _______    _______    _______
+            >;
+        };
+
+        mouse_layer {
+            label = "Ms";
+            bindings = <
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_dpi    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    XXXXXXX    XXXXXXX    XXXXXXX
+                                 _______    _______    &tog MS_L  _______
+            >;
+        };
+
+        num_func_layer {
+            label = "Num_Func";
+            bindings = <
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5     &kp LS(N7)   &kp N7    &kp N8    &kp N9    &kp SLASH
+NF_F6     NF_F7     NF_F8     NF_F9     &kp F10    &kp LS(RBKT) NF_4      NF_5      NF_6      NF_PLS
+&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX    &kp COMMA    &kp N1    &kp N2    &kp N3    &kp DOT
+                              _______   _______    &kp N0       _______
+            >;
+        };
+
+        symbol_layer {
+            label = "Symbol";
+            bindings = <
+&kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   XXXXXXX     &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) XXXXXXX
+&kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   XXXXXXX     &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
+XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_cpln          &im1_ins          XXXXXXX      &kp PSCRN
+                                       _______    _______      _______     _______
+            >;
+        };
+
+        adjust_layer {
+            label = "Adjust";
+            bindings = <
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
+                                    _______     _______     _______     _______
+            >;
+        };
+    };
+};
