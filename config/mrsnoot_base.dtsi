@@ -8,11 +8,12 @@
 
 // Layers
 #define OPY_L 0
-#define NAV_L 1
-#define MS_L  2
-#define NUM_L 3
-#define SYM_L 4
-#define ADJ_L 5
+#define SON_L 1
+#define NAV_L 2
+#define MS_L  3
+#define NUM_L 4
+#define SYM_L 5
+#define ADJ_L 6
 
 // Default
 #define _______ &trans
@@ -26,6 +27,7 @@
 #define MICMUTE &kp LC(LS(M))
 
 // Home Row Mods
+// OPY
 #define HRM_O_H &bhm LSHFT H
 #define HRM_O_A &bhm LALT A
 #define HRM_O_E &bhm LCTRL E
@@ -35,6 +37,17 @@
 #define HRM_O_S &bhm LALT S
 #define HRM_O_R &bhm RSHFT R
 
+// SONNE
+#define HRM_S_A &bhm LSHFT A
+#define HRM_S_I &bhm LALT I
+#define HRM_S_E &bhm LCTRL E
+#define HRM_S_S &kp S
+#define HRM_S_H &kp H
+#define HRM_S_T &bhm LCTRL T
+#define HRM_S_N &bhm LALT N
+#define HRM_S_R &bhm RSHFT R
+
+// NUM
 #define NF_F6 &bhm LSHFT F6
 #define NF_F7 &bhm LALT F7
 #define NF_F8 &bhm LCTRL F8
