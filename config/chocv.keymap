@@ -121,7 +121,7 @@ XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_c
         adjust_layer {
             label = "Adjust";
             bindings = <
-XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     &tog SON_L  &bootloader
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
                         _______     _______     _______     _______     _______     _______
