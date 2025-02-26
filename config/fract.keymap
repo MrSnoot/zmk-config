@@ -68,6 +68,16 @@
             >;
         };
 
+        sonne_layer {
+            label = "Sonne";
+            bindings = <
+ &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      &kp C      &kp L      &kp Q
+ HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
+ &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      &bhm LGUI MINUS 
+                       XXXXXXX    OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM    XXXXXXX
+            >;
+        };
+
         nav_layer {
             label = "Nav";
             bindings = <
@@ -111,7 +121,7 @@ XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_c
         adjust_layer {
             label = "Adjust";
             bindings = <
-XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     &tog SON_L  &bootloader
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
                                     _______     _______     _______     _______
