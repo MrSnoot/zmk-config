@@ -74,7 +74,7 @@
  &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      &kp C      &kp L      &kp Q
  HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
  &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      &bhm LGUI MINUS 
-                       XXXXXXX    OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM    XXXXXXX
+                                  OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM
             >;
         };
 
