@@ -5,171 +5,171 @@
         combo_caps_word {
             timeout-ms = <50>;
             key-positions = <COMBO_CAPS_WORD>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&caps_word>;
         };
         // Left side
         combo_esc {
            timeout-ms = <50>;
            key-positions = <COMBO_ESC>;
-           layers = <OPY_L SON_L>;
+           layers = <SON_L OPY_L>;
            bindings = <&kp ESC>;
         };
         combo_dot {
             timeout-ms = <50>;
             key-positions = <COMBO_DOT>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp DOT>;
         };
         combo_comma {
             timeout-ms = <50>;
             key-positions = <COMBO_COMMA>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp COMMA>;
         };
         combo_dash {
             timeout-ms = <50>;
             key-positions = <COMBO_DASH>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp SLASH>;
         };
         combo_squot {
             timeout-ms = <50>;
             key-positions = <COMBO_SQUOT>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp RS(NUHS)>;
         };
         combo_dquot {
             timeout-ms = <50>;
             key-positions = <COMBO_DQUOT>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LS(N2)>;
         };
         combo_star {
             timeout-ms = <50>;
             key-positions = <COMBO_STAR>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp RS(RBKT)>;
         };
         combo_hash {
             timeout-ms = <50>;
             key-positions = <COMBO_HASH>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp NUHS>;
         };
         combo_equal {
             timeout-ms = <50>;
             key-positions = <COMBO_EQUAL>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&kp LS(N0)>;
         };
         combo_percent {
             timeout-ms = <50>;
             key-positions = <COMBO_PERCENT>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LS(N5)>;
         };
         combo_slash {
             timeout-ms = <50>;
             key-positions = <COMBO_SLASH>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LS(N7)>;
         };
         combo_backslash {
             timeout-ms = <50>;
             key-positions = <COMBO_BACKSLASH>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp RA(MINUS)>;
         };
         // Right side
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <COMBO_BSPC>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&kp BSPC>;
         };
         combo_bspc_word {
             timeout-ms = <50>;
             key-positions = <COMBO_BSPC_WORD>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&kp LC(BSPC)>;
         };
         combo_del {
             timeout-ms = <50>;
             key-positions = <COMBO_DEL>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&kp DEL>;
         };
         combo_del_word {
             timeout-ms = <50>;
             key-positions = <COMBO_DEL_WORD>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&kp LC(DEL)>;
         };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&kp LC(C)>;
         }; 
         combo_paste {
             timeout-ms = <50>;
             key-positions = <COMBO_PASTE>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&kp LC(V)>;
         };
         combo_cut {
             timeout-ms = <50>;
             key-positions = <COMBO_CUT>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&kp LC(X)>;
         };
         combo_copy_all {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_ALL>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&cp_all>;
         };
         combo_copy_line {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_LINE>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&cp_line>;
         };
         combo_copy_word {
             timeout-ms = <50>;
             key-positions = <COMBO_COPY_WORD>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&cp_word>;
         };
         combo_alt_f4 {
             timeout-ms = <50>;
             key-positions = <COMBO_ALT_F4>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LA(F4)>;
         };
         combo_tab {
             timeout-ms = <50>;
             key-positions = <COMBO_TAB>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp TAB>;
         };
         combo_vdpr {
             timeout-ms = <50>;
             key-positions = <COMBO_VDPR>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LG(LC(LEFT))>;
         };
         combo_vdnx {
             timeout-ms = <50>;
             key-positions = <COMBO_VDNX>;
-            layers = <OPY_L SON_L>;
+            layers = <SON_L OPY_L>;
             bindings = <&kp LG(LC(RIGHT))>;
         };
         combo_ms_layer {
             timeout-ms = <50>;
             key-positions = <COMBO_MS_LAYER>;
-            layers = <OPY_L SON_L MS_L>;
+            layers = <SON_L OPY_L MS_L>;
             bindings = <&tog MS_L>;
         };
         combo_ms_dclick {
@@ -181,7 +181,7 @@
         combo_num_word {
             timeout-ms = <50>;
             key-positions = <COMBO_NUM_WORD>;
-            layers = <OPY_L SON_L NUM_L>;
+            layers = <SON_L OPY_L NUM_L>;
             bindings = <&num_word NUM_L>;
         };
         combo_soft_off {
