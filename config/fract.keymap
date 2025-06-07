@@ -68,15 +68,6 @@
             >;
         };
 
-        opy_layer {
-            label = "Opy";
-            bindings = < &kp Q      &kp Y      &kp O      &kp P      &kp Z      &kp W      &kp C      &kp M      &kp V      &kp X
- HRM_O_H    HRM_O_A    HRM_O_E    HRM_O_I    &kp K      &kp G      HRM_O_T    HRM_O_N    HRM_O_S    HRM_O_R
- &kp J      &kp SEMI   &kp QUOT   &kp U      &kp LBKT   &kp B      &kp D      &kp L      &kp F      &bhm LGUI MINUS 
-                                  OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM
-            >;
-        };
-
         nav_layer {
             label = "Nav";
             bindings = <
@@ -120,7 +111,7 @@ XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_c
         adjust_layer {
             label = "Adjust";
             bindings = <
-XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     &tog OPY_L  &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
 XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
                                     _______     _______     _______     _______
