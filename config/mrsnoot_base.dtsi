@@ -47,7 +47,7 @@
 #define NF_PLS &bhm RSHFT RBKT
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };e
+&lt { quick_tap_ms = <200>; };
 
 &caps_word {
   // do continue on: Backspace - ä ö ü
