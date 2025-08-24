@@ -84,7 +84,7 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &bt BT(0)  &bt BT(1)  &bt
 XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    &tog MS_L  XXXXXXX
 &kp LSHFT  &kp LALT   &kp LCTRL  XXXXXXX    XXXXXXX    XXXXXXX    _______    &mkp MB2   &kp LCTRL  &kp LSHFT
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &dbl_clk   XXXXXXX    &tb_dpi
-                                 _______    _______    &kp LGUI   &mkp MB1   _______
+                                 _______    &kp LGUI   &mkp MB1   _______
             >;
         };
 

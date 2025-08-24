@@ -108,7 +108,7 @@ _______   _______   _______   _______   _______                       &kp N0    
 &kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   XXXXXXX     XXXXXXX     XXXXXXX     &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) XXXXXXX
 &kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   XXXXXXX     XXXXXXX     XXXXXXX     &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
 XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     XXXXXXX     XXXXXXX     &f2_cpln          &im1_ins          XXXXXXX      &kp PSCRN
-_______       _______       _______    _______    &mo ADJ                              _______     _______           _______           _______      _______
+_______       _______       _______    _______    &mo ADJ_L                            _______     _______           _______           _______      _______
             >;
         };
 
