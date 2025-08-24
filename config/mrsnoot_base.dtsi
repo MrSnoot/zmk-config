@@ -19,11 +19,11 @@
 #define XXXXXXX &none
 
 // Thumbs
-#define OSL_NUM &sl NUM_L
+//#define OSL_NUM &sl NUM_L
 #define NUM_SPC &lt NUM_L SPACE
 #define SYM_ENT  &lt SYM_L ENTER
 //#define OSL_SYM &sl SYM_L
-//#define MICMUTE &kp LC(LS(M))
+#define MICMUTE &kp LC(LS(M))
 
 // Home Row Mods
 // SONNE
