@@ -20,18 +20,18 @@
 
 // Thumbs
 #define OSL_NUM &sl NUM_L
-#define NAV_SPC &lt NAV_L SPACE
-#define MS_ENT  &lt MS_L ENTER
-#define OSL_SYM &sl SYM_L
-#define MICMUTE &kp LC(LS(M))
+#define NUM_SPC &lt NUM_L SPACE
+#define SYM_ENT  &lt SYM_L ENTER
+//#define OSL_SYM &sl SYM_L
+//#define MICMUTE &kp LC(LS(M))
 
 // Home Row Mods
 // SONNE
 #define HRM_S_A &bhm LSHFT A
 #define HRM_S_I &bhm LALT I
 #define HRM_S_E &bhm LCTRL E
-#define HRM_S_S &kp S
-#define HRM_S_H &kp H
+#define HRM_S_S &lt NAV_L S
+#define HRM_S_H &lt MS_L H
 #define HRM_S_T &bhm LCTRL T
 #define HRM_S_N &bhm LALT N
 #define HRM_S_R &bhm RSHFT R
@@ -79,11 +79,11 @@
     };
 
     // Conditional layer only when we have less thumb keys
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-    	tri {
-    	    if-layers = <NUM_L SYM_L>;
-    	    then-layer = <ADJ_L>;
-        };
-    };
+    //cond_layers {
+    //    compatible = "zmk,conditional-layers";
+    //	tri {
+    //	    if-layers = <NUM_L SYM_L>;
+    //	    then-layer = <ADJ_L>;
+    //    };
+    //};
 };

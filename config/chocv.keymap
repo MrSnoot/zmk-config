@@ -42,7 +42,7 @@
 #define COMBO_VDPR      7 16
 #define COMBO_VDNX      6 17
 #define COMBO_MS_LAYER  18 33
-#define COMBO_MS_DCLICK 16 17
+#define COMBO_MS_DCLICK 17 33
 #define COMBO_NUM_WORD  16 27
 #define COMBO_SOFT_OFF  10 19
 
@@ -64,7 +64,7 @@
  &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      &kp C      &kp L      &kp Q
  HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
  &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      &bhm LGUI MINUS 
-                       XXXXXXX    OSL_NUM    NAV_SPC    MS_ENT     OSL_SYM    XXXXXXX
+                       XXXXXXX    XXXXXXX    NUM_SPC    MS_ENT     XXXXXXX    XXXXXXX
             >;
         };
 
@@ -72,19 +72,19 @@
             label = "Nav";
             bindings = <
 &bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
-&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  _______    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
-&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
-                      _______    _______    _______    _______    _______    _______
+&kp LSHFT  &kp LALT   &kp LCTRL  _______    XXXXXXX    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)
+                      _______    _______    &kp LGUI   _______    _______    _______
             >;
         };
 
         mouse_layer {
             label = "Ms";
             bindings = <
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_dpi    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    XXXXXXX    XXXXXXX    XXXXXXX
-                      _______    _______    _______    &tog MS_L  _______    _______
+XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    &tog MS_L  XXXXXXX
+&kp LSHFT  &kp LALT   &kp LCTRL  XXXXXXX    XXXXXXX    XXXXXXX    _______    &mkp MB2   &kp LCTRL  &kp LSHFT
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &dbl_clk   XXXXXXX    &tb_dpi
+                      _______    _______    &kp LGUI   &mkp MB1   _______    _______
             >;
         };
 
@@ -104,7 +104,7 @@ NF_F6     NF_F7     NF_F8     NF_F9     &kp F10    &kp LS(RBKT) NF_4      NF_5  
 &kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   XXXXXXX     &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) XXXXXXX
 &kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   XXXXXXX     &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
 XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_cpln          &im1_ins          XXXXXXX      &kp PSCRN
-                            _______    _______    _______      _______     _______           _______
+                            _______    _______    &mo ADJ_L    _______     _______           _______
             >;
         };
 
