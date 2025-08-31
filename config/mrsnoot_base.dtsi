@@ -44,7 +44,7 @@
 #define NF_4 &bhm LGUI N4
 #define NF_5 &bhm LCTRL N5
 #define NF_6 &bhm LALT N6
-#define NF_PLS &bhm RSHFT RBKT
+#define NF_DOT &bhm RSHFT DOT
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };

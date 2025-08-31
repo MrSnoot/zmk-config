@@ -96,8 +96,8 @@ _______    _______    _______    _______    &kp LGUI                         &mk
             label = "Num_Func";
             bindings = <
 &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    XXXXXXX   XXXXXXX   &kp LS(N7)   &kp N7    &kp N8    &kp N9    &kp SLASH
-NF_F6     NF_F7     NF_F8     NF_F9     &kp F10   XXXXXXX   XXXXXXX   &kp LS(RBKT) NF_4      NF_5      NF_6      NF_PLS
-&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX   XXXXXXX   XXXXXXX   &kp COMMA    &kp N1    &kp N2    &kp N3    &kp DOT
+NF_F6     NF_F7     NF_F8     NF_F9     &kp F10   XXXXXXX   XXXXXXX   &kp COMMA    NF_4      NF_5      NF_6      NF_DOT
+&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX   XXXXXXX   XXXXXXX   &kp LS(RBKT) &kp N1    &kp N2    &kp N3    &kp RBKT
 _______   _______   _______   _______   _______                       &kp N0       _______   _______   _______   _______
             >;
         };
