@@ -6,7 +6,7 @@
 
 #define BT(n) BT_SEL n
 
-// Layers
+// Layers test
 #define SON_L 0
 #define NAV_L 1
 #define MS_L  2
