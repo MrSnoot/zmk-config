@@ -16,8 +16,8 @@
 #
 ---
 include:
-  - board: puchi_ble_v1
+  - board: puchi_ble
     shield: chocv
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: fract
   - board: lpgalaxy_blank_slate
