@@ -57,7 +57,6 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            label = "Base";
             bindings = <
 &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      LT_MS_C    &kp L      &kp Q
 HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
@@ -67,7 +66,6 @@ HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM
         };
 
         nav_layer {
-            label = "Nav";
             bindings = <
 &bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
 &kp LSHFT  &kp LALT   &kp LCTRL  _______    XXXXXXX    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
@@ -77,7 +75,6 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &bt BT(0)  &bt BT(1)  &bt
         };
 
         mouse_layer {
-            label = "Ms";
             bindings = <
 XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    &kp PSCRN  &mkp MB1   _______    LT_CMB2    &kp LSHFT
 &kp LSHFT  &kp LALT   &kp LCTRL  XXXXXXX    XXXXXXX    TG_MS_L    &dbl_clk   XXXXXXX    &tb_dpi    &tb_scr
@@ -87,7 +84,6 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXX
         };
 
         num_func_layer {
-            label = "Num_Func";
             bindings = <
 &kp F12    &kp F11    &kp F10    &kp F9     XXXXXXX    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp RBKT
 NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_5       NF_6       NF_DOT
@@ -97,7 +93,6 @@ NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_
         };
 
         symbol_layer {
-            label = "Symbol";
             bindings = <
 DE_EXLM    DE_DEG     DE_SECT    DE_DLR     DE_AMPR    XXXXXXX    XXXXXXX    NP_XMLL    NP_XMLF    DE_PIPE
 DE_QUES    DE_LCBR    DE_RCBR    DE_LPRN    DE_LPRN    XXXXXXX    _______    &f2_cpln   &im1_ins   DE_CIRC
@@ -107,7 +102,6 @@ XXXXXXX    DE_LBRC    DE_RBRC    DE_LABK    DE_RABK    XXXXXXX    XXXXXXX    DE_
         };
 
         adjust_layer {
-            label = "Adjust";
             bindings = <
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp KP_NLCK XXXXXXX   &bootloader
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp CLCK    XXXXXXX   XXXXXXX
