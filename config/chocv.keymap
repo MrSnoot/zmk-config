@@ -14,6 +14,7 @@
     ╰─────────────────────────────────────────╯
 */
 
+#define COMBO_CAPS_WORD 10 19
 #define COMBO_ESC       0 1
 #define COMBO_DOT       12 13
 #define COMBO_COMMA     11 12
@@ -40,7 +41,8 @@
 #define COMBO_TAB       17 26
 #define COMBO_VDPR      6 16
 #define COMBO_VDNX      7 17
-#define COMBO_CAPS_WORD 10 19
+#define COMBO_MS_LAYER  18 33
+#define COMBO_MS_DCLICK 17 33
 #define COMBO_NUM_WORD  16 27
 #define COMBO_SOFT_OFF  10 19
 
@@ -57,15 +59,17 @@
         compatible = "zmk,keymap";
 
         base_layer {
+            label = "Base";
             bindings = <
-&kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      LT_MS_C    &kp L      &kp Q
-HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
-&kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      GUI_SS
-                      XXXXXXX    XXXXXXX    NUM_SPC    NUM_ENT    XXXXXXX    XXXXXXX
+ &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      &kp C      &kp L      &kp Q
+ HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
+ &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      &bhm LGUI MINUS 
+                       XXXXXXX    XXXXXXX    NUM_SPC    SYM_ENT    XXXXXXX    XXXXXXX
             >;
         };
 
         nav_layer {
+            label = "Nav";
             bindings = <
 &bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
 &kp LSHFT  &kp LALT   &kp LCTRL  _______    XXXXXXX    XXXXXXX    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
@@ -75,38 +79,42 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &bt BT(0)  &bt BT(1)  &bt
         };
 
         mouse_layer {
+            label = "Ms";
             bindings = <
-XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    &kp PSCRN  &mkp MB1   _______    LT_CMB2    &kp LSHFT
-&kp LSHFT  &kp LALT   &kp LCTRL  XXXXXXX    XXXXXXX    TG_MS_L    &dbl_clk   XXXXXXX    &tb_dpi    &tb_scr
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
-                      _______    _______    &kp LGUI   XXXXXXX    _______    _______
+XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    XXXXXXX    XXXXXXX    &tb_scr    &tog MS_L  XXXXXXX
+&kp LSHFT  &kp LALT   &kp LCTRL  XXXXXXX    XXXXXXX    XXXXXXX    _______    &mkp MB2   &kp LCTRL  &kp LSHFT
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &dbl_clk   XXXXXXX    &tb_dpi
+                      _______    _______    &kp LGUI   &mkp MB1   _______    _______
             >;
         };
 
         num_func_layer {
+            label = "Num_Func";
             bindings = <
-&kp F12    &kp F11    &kp F10    &kp F9     XXXXXXX    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp RBKT
-NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_5       NF_6       NF_DOT
-&kp F4     &kp F3     &kp F2     &kp F1     XXXXXXX    &kp COMMA  &kp N1     &kp N2     &kp N3     &kp N0  
-                      _______    _______    _______    XXXXXXX    _______    _______
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5     &kp LS(N7)   &kp N7    &kp N8    &kp N9    &kp SLASH
+NF_F6     NF_F7     NF_F8     NF_F9     &kp F10    &kp COMMA    NF_4      NF_5      NF_6      NF_DOT
+&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX    &kp LS(RBKT) &kp N1    &kp N2    &kp N3    &kp RBKT
+                    _______   _______   _______    &kp N0       _______   _______
             >;
         };
 
         symbol_layer {
+            label = "Symbol";
             bindings = <
-DE_EXLM    DE_DEG     DE_SECT    DE_DLR     DE_AMPR    XXXXXXX    XXXXXXX    NP_XMLL    NP_XMLF    DE_PIPE
-DE_QUES    DE_LCBR    DE_RCBR    DE_LPRN    DE_LPRN    XXXXXXX    _______    &f2_cpln   &im1_ins   DE_CIRC
-XXXXXXX    DE_LBRC    DE_RBRC    DE_LABK    DE_RABK    XXXXXXX    XXXXXXX    DE_ACUT    DE_GRV     DE_TILD
-                      _______    _______    &mo ADJ_L  _______    _______    _______
+&kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   XXXXXXX     &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) XXXXXXX
+&kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   XXXXXXX     &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
+XXXXXXX       &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) XXXXXXX     &f2_cpln          &im1_ins          XXXXXXX      &kp PSCRN
+                            _______    _______    &mo ADJ_L    _______     _______           _______
             >;
         };
 
         adjust_layer {
+            label = "Adjust";
             bindings = <
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp KP_NLCK XXXXXXX   &bootloader
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp CLCK    XXXXXXX   XXXXXXX
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp SLCK    XXXXXXX   &tb_rst
-                      _______    _______    _______    _______    _______    _______
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp KP_NLCK XXXXXXX     XXXXXXX     &bootloader
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp CLCK    XXXXXXX     XXXXXXX     XXXXXXX
+XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     XXXXXXX     &kp SLCK    XXXXXXX     XXXXXXX     &tb_rst
+                        _______     _______     _______     _______     _______     _______
             >;
         };
     };

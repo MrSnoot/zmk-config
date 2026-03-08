@@ -24,7 +24,7 @@
 #define GUI_SS  &bhm LGUI MINUS
 #define MICMUTE &kp LC(LS(M))
 #define LT_MS_C &lt MS_L C
-#define LT_CMB2 &bhm LCTRL C
+#define LT_CMB2 &bhm LCTRL &mkp MB2
 #define ALT_F5  &kp LA(F5)
 #define TG_MS_L &tog MS_L
 #define DE_EXLM &kp LS(N1)
