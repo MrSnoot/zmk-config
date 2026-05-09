@@ -1,13 +1,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-        // Both sides
-        combo_caps_word {
-            timeout-ms = <50>;
-            key-positions = <COMBO_CAPS_WORD>;
-            layers = <SON_L>;
-            bindings = <&caps_word>;
-        };
         // Left side
         combo_esc {
            timeout-ms = <50>;
@@ -166,17 +159,12 @@
             layers = <SON_L>;
             bindings = <&kp LG(LC(RIGHT))>;
         };
-        combo_ms_layer {
+        // Both sides
+        combo_caps_word {
             timeout-ms = <50>;
-            key-positions = <COMBO_MS_LAYER>;
-            layers = <SON_L MS_L>;
-            bindings = <&tog MS_L>;
-        };
-        combo_ms_dclick {
-            timeout-ms = <50>;
-            key-positions = <COMBO_MS_DCLICK>;
-            layers = <MS_L>;
-            bindings = <&dbl_clk>;
+            key-positions = <COMBO_CAPS_WORD>;
+            layers = <SON_L>;
+            bindings = <&caps_word>;
         };
         combo_num_word {
             timeout-ms = <50>;

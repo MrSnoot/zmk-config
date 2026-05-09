@@ -14,7 +14,6 @@
     ╰─────────────────────────────────────────╯
 */
 
-#define COMBO_CAPS_WORD 10 19
 #define COMBO_ESC       0 1
 #define COMBO_DOT       12 13
 #define COMBO_COMMA     11 12
@@ -41,8 +40,7 @@
 #define COMBO_TAB       17 26
 #define COMBO_VDPR      6 16
 #define COMBO_VDNX      7 17
-#define COMBO_MS_LAYER  18 33
-#define COMBO_MS_DCLICK 17 33
+#define COMBO_CAPS_WORD 10 19
 #define COMBO_NUM_WORD  16 27
 #define COMBO_SOFT_OFF  10 19
 
