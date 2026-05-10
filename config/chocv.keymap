@@ -59,9 +59,9 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      &kp C      &kp L      &kp Q
+ &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      LT_MS_C    &kp L      &kp Q
  HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
- &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      &bhm LGUI MINUS 
+ &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      &kp Y      &kp K      &kp B      &kp X      GUI_SS 
                        XXXXXXX    XXXXXXX    NUM_SPC    NUM_ENT    XXXXXXX    XXXXXXX
             >;
         };
@@ -91,8 +91,8 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXX
             bindings = <
 &kp F12    &kp F11    &kp F10    &kp F9     XXXXXXX    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp RBKT
 NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_5       NF_6       NF_DOT
-&kp F4     &kp F3     &kp F2     &kp F1     XXXXXXX    &kp COMMA  &kp N1     &kp N2     &kp N3     &kp N0
-                      _______    _______    _______    &kp N0     _______    _______
+&kp F4     &kp F3     &kp F2     &kp F1     XXXXXXX    &kp N0     &kp N1     &kp N2     &kp N3     &kp N0
+                      _______    _______    _______    XXXXXXX    _______    _______
             >;
         };
 

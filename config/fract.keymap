@@ -91,7 +91,7 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXX
             bindings = <
 &kp F12    &kp F11    &kp F10    &kp F9     XXXXXXX    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp RBKT
 NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_5       NF_6       NF_DOT
-&kp F4     &kp F3     &kp F2     &kp F1     XXXXXXX    &kp COMMA  &kp N1     &kp N2     &kp N3     &kp N0
+&kp F4     &kp F3     &kp F2     &kp F1     XXXXXXX    &kp N0     &kp N1     &kp N2     &kp N3     &kp N0
                                  _______    _______    XXXXXXX    _______
             >;
         };

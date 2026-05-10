@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <behaviors/num_word.dtsi>
 
 #define BT(n) BT_SEL n
@@ -29,7 +29,7 @@
 #define GUI_SS  &bhm LGUI MINUS
 #define MICMUTE &kp LC(LS(M))
 #define LT_MS_C &lt MS_L C
-#define LT_CMB2 &bhm LCTRL &mkp MB2
+#define LT_CMB2 &bhm LCTRL MB2
 #define ALT_F5  &kp LA(F5)
 #define TG_MS_L &tog MS_L
 #define DE_EXLM &kp LS(N1)
@@ -104,13 +104,4 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
-    // Conditional layer only when we have less thumb keys
-    //cond_layers {
-    //    compatible = "zmk,conditional-layers";
-    //	tri {
-    //	    if-layers = <NUM_L SYM_L>;
-    //	    then-layer = <ADJ_L>;
-    //    };
-    //};
 };
