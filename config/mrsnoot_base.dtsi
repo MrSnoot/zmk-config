@@ -105,7 +105,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        bmm: balanced_homerow_mods {
+        bmm: balanced_mouse_mods {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             #binding-cells = <2>;
