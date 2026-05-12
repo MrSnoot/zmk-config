@@ -105,7 +105,7 @@ _______    _______    _______    _______    &mo ADJ_L                        ___
 
         adjust_layer {
             bindings = <
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp KP_NLCK XXXXXXX   &bootloader
+&soft_off  XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp KP_NLCK XXXXXXX   &bootloader
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp CLCK    XXXXXXX   XXXXXXX
 XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp SLCK    XXXXXXX   &tb_rst
 _______    _______    _______    _______    _______                          _______    _______    _______     _______   _______
