@@ -97,7 +97,7 @@ _______    _______    _______    _______    _______                          XXX
         symbol_layer {
             bindings = <
 DE_EXLM    DE_DEG     DE_SECT    DE_DLR     DE_AMPR    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    NP_XMLL    NP_XMLF    DE_PIPE
-DE_QUES    DE_LCBR    DE_RCBR    DE_LPRN    DE_LPRN    XXXXXXX    XXXXXXX    XXXXXXX    _______    &f2_cpln   &im1_ins   DE_CIRC
+DE_QUES    DE_LCBR    DE_RCBR    DE_LPRN    DE_RPRN    XXXXXXX    XXXXXXX    XXXXXXX    _______    &f2_cpln   &im1_ins   DE_CIRC
 XXXXXXX    DE_LBRC    DE_RBRC    DE_LABK    DE_RABK    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    DE_ACUT    DE_GRV     DE_TILD
 _______    _______    _______    _______    &mo ADJ_L                        _______    _______    _______    _______    _______
             >;
