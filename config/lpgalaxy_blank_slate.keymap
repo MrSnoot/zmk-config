@@ -44,7 +44,7 @@
 #define COMBO_VDNX      9 21
 #define COMBO_CAPS_WORD 12 23
 #define COMBO_NUM_WORD  20 33
-#define COMBO_SOFT_OFF  12 23
+#define COMBO_SOFT_OFF  24 35
 
 #include "mrsnoot_base.dtsi"
 #include "mrsnoot_combos.dtsi"
