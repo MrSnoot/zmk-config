@@ -57,6 +57,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
+            display-name = "Base";
             label = "Base";
             bindings = <
  &kp QUOT   &kp U      &kp O      &kp M      &kp Z      &kp P      &kp D      LT_MS_C    &kp L      &kp Q
@@ -67,6 +68,7 @@
         };
 
         nav_layer {
+            display-name = "Navi";
             label = "Nav";
             bindings = <
 &bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
@@ -77,6 +79,7 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &bt BT(0)  &bt BT(1)  &bt
         };
 
         mouse_layer {
+            display-name = "Maus";
             label = "Ms";
             bindings = <
 XXXXXXX    XXXXXXX    XXXXXXX    MICMUTE    XXXXXXX    &kp PSCRN  &mkp MB1   _______    LT_CMB2    &kp LSHFT
@@ -87,6 +90,7 @@ XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXX
         };
 
         num_func_layer {
+            display-name = "NumFunc";
             label = "Num_Func";
             bindings = <
 &kp F12    &kp F11    &kp F10    &kp F9     XXXXXXX    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp RBKT
@@ -97,6 +101,7 @@ NF_F8      NF_F7      NF_F6      NF_F5      ALT_F5     &kp COMMA  NF_4       NF_
         };
 
         symbol_layer {
+            display-name = "Symbol";
             label = "Symbol";
             bindings = <
 DE_EXLM    DE_DEG     DE_SECT    DE_DLR     DE_AMPR    XXXXXXX    XXXXXXX    NP_XMLL    NP_XMLF    DE_PIPE
@@ -107,6 +112,7 @@ XXXXXXX    DE_LBRC    DE_RBRC    DE_LABK    DE_RABK    XXXXXXX    XXXXXXX    DE_
         };
 
         adjust_layer {
+            display-name = "Adjust";
             label = "Adjust";
             bindings = <
 &soft_off  XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp KP_NLCK XXXXXXX   &bootloader
