@@ -15,7 +15,7 @@ if SHIELD_CHOCV_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "ChocV"
+    default "ChocV_Dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
