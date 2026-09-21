@@ -1,4 +1,4 @@
-#include "lpgalaxy_blank_slate-layouts.dtsi"
+#include "lpgalaxy_blank_slate-layouts.dts"
 
 / {
     chosen {
