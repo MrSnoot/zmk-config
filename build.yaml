@@ -16,19 +16,20 @@
 #
 ---
 include:
-  - board: puchi_ble_v1
-    shield: chocv
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: seeeduino_xiao_ble
-    shield: chocv_dongle prospector_adapter
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-  - board: puchi_ble_v1
-    shield: settings_reset
+#  - board: puchi_ble_v1
+#    shield: chocv
+#    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#  - board: puchi_ble_v1
+#    shield: settings_reset
 #  - board: nice_nano_v2
 #    shield: fract
-#  - board: lpgalaxy_blank_slate
-#  - board: lpgalaxy_blank_slate
-#   snippet: studio-rpc-usb-uart
-#  cmake-args: -DCONFIG_ZMK_STUDIO=n
-# artifact-name: lpgalaxy_blank_slate-studio
+  - board: lpgalaxy_blank_slate
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: lpgalaxy_blank_slate
+    shield: settings_reset
+#  - board: seeeduino_xiao_ble
+#    shield: chocv_dongle prospector_adapter
+  - board: seeeduino_xiao_ble
+    shield: lpgalaxy_blank_slate_dongle prospector_adapter
+  - board: seeeduino_xiao_ble
+    shield: settings_reset

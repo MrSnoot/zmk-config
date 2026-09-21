@@ -40,6 +40,7 @@
 #define COMBO_COPY_WORD 34 35
 #define COMBO_ALT_F4    19 31
 #define COMBO_TAB       21 32
+#define COMBO_ENTER     21 22
 #define COMBO_VDPR      8 20
 #define COMBO_VDNX      9 21
 #define COMBO_CAPS_WORD 12 23
@@ -64,7 +65,7 @@
 &kp QUOT   &kp U      &kp O      &kp M      &kp Z      XXXXXXX    XXXXXXX    &kp P      &kp D      LT_MS_C    &kp L      &kp Q
 HRM_S_A    HRM_S_I    HRM_S_E    HRM_S_S    &kp F      XXXXXXX    XXXXXXX    &kp G      HRM_S_H    HRM_S_T    HRM_S_N    HRM_S_R
 &kp LBKT   &kp J      &kp SEMI   &kp W      &kp V      XXXXXXX    XXXXXXX    &kp Y      &kp K      &kp B      &kp X      GUI_SS 
-XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    NUM_SPC                          NUM_ENT    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
+XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    NUM_SPC                          NUM_SPC    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX
             >;
         };
 
