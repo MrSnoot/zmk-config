@@ -24,7 +24,7 @@ include:
 #  - board: nice_nano_v2
 #    shield: fract
   - board: lpgalaxy_blank_slate
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 #  - board: lpgalaxy_blank_slate
 #    shield: settings_reset
 #  - board: seeeduino_xiao_ble
