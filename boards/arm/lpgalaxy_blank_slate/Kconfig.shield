@@ -1,2 +1,0 @@
-config SHIELD_LPGALAXY_BLANK_SLATE_DONGLE
-    def_bool $(shields_list_contains,lpgalaxy_blank_slate_dongle)
