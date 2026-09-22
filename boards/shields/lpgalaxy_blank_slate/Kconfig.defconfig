@@ -1,6 +1,16 @@
-if SHIELD_LPGALAXY_BLANK_SLATE_DONGLE
+if BOARD_LPGALAXY_BLANK_SLATE
 
-# Max 16 characters in keyboard name
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if BOARD_LPGALAXY_BLANK_SLATE_DONGLE
+
+# Max §= characters in keyboard name
 config ZMK_KEYBOARD_NAME
     default "Blank Slate Dongle"
 
