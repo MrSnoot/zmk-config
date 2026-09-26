@@ -1,0 +1,12 @@
+#include "lpgalaxy_blank_slate-layouts.dtsi"
+
+&layout_ortho_4x12_2x2u {
+    transform = <&default_transform>;
+};
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &layout_ortho_4x12_2x2u;
+    };
+};
