@@ -1,3 +1,38 @@
+if BOARD_LPGALAXY_BLANK_SLATE
+
+config BOARD
+	default "lpgalaxy_blank_slate"
+
+config ZMK_KEYBOARD_NAME
+	default "Blank Slate"
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default n
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+config ZMK_SPLIT
+    default y
+
+endif # BOARD_LPGALAXY_BLANK_SLATE
+
 if SHIELD_LPGALAXY_BLANK_SLATE_DONGLE
 
 # Max 16 characters in keyboard name
