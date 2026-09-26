@@ -37,7 +37,7 @@ if SHIELD_LPGALAXY_BLANK_SLATE_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "BlankSlateDongle"
+    default "Bk_Slate_Dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
